@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" thread-count="2" parallel="tests">
+
+	<parameter name="browser" value="edge"></parameter>
+		<test name="Test1">
+	  <classes>
+		<!--  <class name="testscripts.LoginTest"/>-->
+     <class name="ParllellScripts.SampleTestOne"/>
+      <class name="ParllellScripts.SampleTwoTest"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="Test2">
+	
+	  <classes>
+		<!--  <class name="testscripts.LoginTest"/>-->
+      <class name="ParllellScripts.SampleThreeTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
+
+<!--TestSuite -> Tests -> TestClasses ->Test Methods-->
